@@ -7,8 +7,8 @@ public class Config {
     // license为调用sdk的人脸检测功能使用，人脸识别 = 人脸检测（sdk功能）  + 人脸比对（服务端api）
     public static String apiKey = "GcFjGWbcRjfNTXgIbEatt2GQ";
     public static String secretKey = "SRSXSRQYro1sFmqsvMGWbOghTeodPCFy";
-    public static String licenseID = "WePatrolNext-Face-face-android";
-    public static String licenseFileName = "idl-license.face.android";
+    public static String licenseID = "qifutongapp-face-android";
+    public static String licenseFileName = "idl-license.face-android";
     /*
      * <p>
      * 每个开发者账号只能创建一个人脸库；groupID用于标识人脸库

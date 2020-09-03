@@ -3,7 +3,7 @@ package com.jwm.facerecognition;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.baidu.idl.face.platform.FaceConfig;
 import com.baidu.idl.face.platform.FaceEnvironment;
@@ -164,7 +164,12 @@ public class FaceRecognitionModule extends ReactContextBaseJavaModule {
                     base64ImageMap = null;
                 } else {
 //                    result.putArray("images", null);
-                    result.putString("error", data.getStringExtra("error"));
+                    if(data != null){
+                        result.putString("error", data.getStringExtra("error"));
+                    }else {
+                        result.putString("error", "error");
+                    }
+
                 }
                 sendEvent("onFaceLivenessDetectFinished", result);
             }
